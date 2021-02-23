@@ -9,6 +9,10 @@ curl --proxy localhost:8118 https://www.google.com
 
 And that's it! Read the accompanying [blog post](https://medium.com/@rdsubhas/docker-image-with-tor-privoxy-and-a-process-manager-under-15-mb-c9e344111b61) for more details.
 
+## Fork
+
+This fork build a Docker image to run the container as non root user (UID/GID 1000)
+
 ## Known Issues
 
 * When running in interactive mode, pressing Ctrl+C doesn't cleanly exit. For now, run it in detached mode (`-d`). Calling `docker stop` cleanly exits though.
